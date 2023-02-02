@@ -1,2 +1,7 @@
-package exception;public class InvalidRoleException {
+package exception;
+
+public class InvalidRoleException extends Exception{
+    public InvalidRoleException(String message) {
+        super(message);
+    }
 }

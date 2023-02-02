@@ -5,23 +5,12 @@ import lombok.Data;
 
 @Data
 public class Session {
-    int idSession;
-    String dateTimeSession;
-    String nameFilm;
-    int ticketQuantity;
+    private int idSession;
+    private String dateTimeSession;
+    private String nameFilm;
+    private int ticketQuantity;
 
     public Session() {
-    }
-
-    public Session(String nameFilm,String dateTimeSession, int ticketQuantity) {
-        this.dateTimeSession = dateTimeSession;
-        this.nameFilm =nameFilm ;
-        this.ticketQuantity = ticketQuantity;
-    }
-    public Session(String nameFilm,String dateTimeSession) {
-        this.dateTimeSession = dateTimeSession;
-        this.nameFilm =nameFilm ;
-        this.ticketQuantity = 25;
     }
 
     @Override

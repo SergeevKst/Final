@@ -1,7 +1,7 @@
 package exception;
 
-public class TicketSoldException extends Exception{
-    public TicketSoldException(String message) {
+public class InvalidTicketException extends Exception{
+    public InvalidTicketException(String message) {
         super(message);
     }
 }

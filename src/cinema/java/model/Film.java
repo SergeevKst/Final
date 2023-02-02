@@ -2,13 +2,12 @@ package model;
 
 import lombok.Data;
 
-import java.util.Date;
-
 @Data
 public class Film {
-    String dateStart;
-    String dateEnd;
-    String nameFilm;
+    private String dateStart;
+    private String dateEnd;
+    private String nameFilm;
+
     @Override
     public String toString() {
         return "Film{" +
@@ -25,13 +24,4 @@ public class Film {
     }
 
     public Film() {}
-
-//    public void setDateStart(String dateStart) {
-//
-//        this.dateStart = dateStart;
-//    }
-//
-//    public void setDateEnd(String dateEnd) {
-//        this.dateEnd = dateEnd;
-//    }
 }

@@ -1,2 +1,7 @@
-package exception;public class InvalidSessionException {
+package exception;
+
+public class InvalidSessionException extends Exception{
+    public InvalidSessionException(String message) {
+        super(message);
+    }
 }
